@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <title>Main Page</title>
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700" rel="stylesheet">
+</head>
+<body>
+<!------- NAVBAR -------->
+    <div class="menu"> <span></span> </div>
+    <nav id="nav">
+        <ul class="main">
+            <li><a target="_blank" href="https://www.facebook.com/ravi7284007">Home</a></li>
+            <li><a target="_blank" href="https://www.facebook.com/ravi7284007">About ME</a></li>
+            <li><a href="#">Personal Training</a></li>
+            <li><a href="#">Corrective Exercise</a></li>
+            <li><a target="_blank" href="https://www.instagram.com/ravi_singh_7/">Pilates</a></li>
+            <li><a target="_blank" href="https://500px.com/ravi7284007">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="overlay"></div>
+  <!-------- SCRIPT FOR NAVBAR ------>
+  
+<script>
+  
+$('.menu, .overlay').click(function () {
+$('.menu').toggleClass('clicked');
+
+$('#nav').toggleClass('show');
+
+});
+</script>
+    <!------  SLIDESHOW  ------>
+    <div class="slideshow-container">
+  	    <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="https://i.pinimg.com/originals/5d/bd/48/5dbd487e03b3631b5da90adc87805fb8.jpg" style="width:100%">
+            <div class="text">Caption Text</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="https://instagram.flhr6-1.fna.fbcdn.net/vp/5fc3034ecfb56cfd2c6914174df6d988/5D34DA08/t51.2885-15/sh0.08/e35/p640x640/56358360_357420398238219_6554097103392444823_n.jpg?_nc_ht=instagram.flhr6-1.fna.fbcdn.net" style="width:100%">
+            <div class="text">Caption Two</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="https://i.pinimg.com/originals/40/5f/b1/405fb15956c35925d493372c20353dfa.jpg" style="width:100%">
+            <div class="text">Caption Three</div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+<!------- SCRIPT FOR SLIDESHOW ------->
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 6000); // Change image every 5 seconds
+}
+</script>
+
+
+  </div> 
+<main>
+    <div id="main">
+        <h2 style="text-align:center">Responsive Pricing Tables</h2>
+        <p style="text-align:center">Resize the browser window to see the effect.</p>
+
+        <div class="columns">
+            <ul class="price">
+                <li class="header">Personal training</li>
+                <li class="grey">$ 9.99 / year</li>
+                <li>10GB Storage</li>
+                <li>10 Emails</li>
+                <li>10 Domains</li>
+                <li>1GB Bandwidth</li>
+                <li class="grey"><a href="#" class="button">Learn more</a></li>
+            </ul>
+        </div>
+
+        <div class="columns">
+            <ul class="price">
+                <li class="header" style="background-color:#4CAF50">Pilates/ Reformer</li>
+                <li class="grey">$ 24.99 / year</li>
+                <li>25GB Storage</li>
+                <li>25 Emails</li>
+                <li>25 Domains</li>
+                <li>2GB Bandwidth</li>
+                <li class="grey"><a href="#" class="button">Learn more</a></li>
+            </ul>
+        </div>
+
+        <div class="columns">
+            <ul class="price">
+                <li class="header">Corrective Exercise</li>
+                <img src="https://cdn.pixabay.com/photo/2016/04/15/04/02/water-1330252__340.jpg">
+                <li class="grey">$ 49.99 / year</li>
+                <li>50GB Storage</li>
+                <li>50 Emails</li>
+                <li>50 Domains</li>
+                <li>5GB Bandwidth</li>
+                <li class="grey"><a href="#" class="button">Learn more</a></li>
+            </ul>
+        </div>
+    </div>
+  
+<footer>
+    <div>
+        <a href="www.szabinarozinger.com"><img src="https://i.imgur.com/CfeRljh.jpg" title="szabinarozinger.com" class="logo" alt="szabina rozinger"></a>
+        <a href="https://gmail.com/#" title="Mail" class="social-icon"><i class="fa fa-2x fa-envelope" aria-hidden="true"></i></a>
+        <a href="https://facebook.com/#" title="Facebook" class="social-icon"><i class="fa fa-2x fa-facebook-square" aria-hidden="true"></i></a>
+        <a href="https://www.whatsapp.com/#" title="Whatsapp" class="social-icon"><i class="fa fa-2x fa-whatsapp" aria-hidden="true"></i></a>
+        <a href="https://instagram.com/#" title="Instagram" class="social-icon"><i class="fa fa-2x fa-instagram" aria-hidden="true"></i></a>
+        <a href="https://linkedin.com/#" title="Linkedin" class="social-icon"><i class="fa fa-2x fa-linkedin-square" aria-hidden="true"></i></a>
+        <p>All rights reserved by Szabina Rozinger</p>
+    </div>
+</footer>
+</body>
+</html>
